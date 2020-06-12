@@ -1,6 +1,6 @@
 ### Read Me First
 - Config values are included in **.properties** / **.yml** format.
-- Config file will be fetched from GIT repo at: [application-config](https://bitbucket.org/optsd/application-config.git)
+- Config file will be fetched from GIT repo at: [application-config](https://github.com/transidai1705/application-config.git)
 
 ### Getting Started
 

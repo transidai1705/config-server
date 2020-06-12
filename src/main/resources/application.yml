@@ -8,7 +8,7 @@ spring:
         config:
             server:
                 git:
-                    uri: https://bitbucket.org/optsd/application-config.git
+                    uri: https://github.com/transidai1705/application-config.git
                     default-label: master		        # default branch to get config if the client doesn't specify
                     username: optsd				        # username & password for connecting to GIT repo
                     password: 228661146      
