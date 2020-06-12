@@ -1,0 +1,22 @@
+# The docker compose for cooperating config server & client
+# To run it, issue command: docker-compose up
+version: '2'
+services:
+  config-server:
+    image: config-server:latest
+    container_name: config-server
+    ports:
+       - "8888:8888"
+    restart: on-failure:3
+
+  config-client:
+    image: config-client:latest
+    container_name: config-client
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.cloud.config.uri=http://config-server:8888
+    depends_on:
+      - config-server
+    restart: on-failure:3
+

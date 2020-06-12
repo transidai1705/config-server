@@ -1,0 +1,20 @@
+# Defines the port where the config-server is running 
+# so that rest of the services can pick up their external configurations
+server:
+    port: 8888		# port of the config server
+ 
+spring:
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://bitbucket.org/optsd/application-config.git
+                    default-label: master		        # default branch to get config if the client doesn't specify
+                    username: optsd				        # username & password for connecting to GIT repo
+                    password: 228661146      
+                    clone-on-start: true		        # clone GIT repo config to local filesystem 
+                    searchPaths: config, config/app		# search path to the configuration file on GIT repo
+    security:
+        user:
+            name: app					# username & password for client to connect to config server
+            password: optsd1705
