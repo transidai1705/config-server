@@ -15,8 +15,8 @@
 
 ``` 
 keytool -genkeypair -alias config-server-key \
-        -keyalg RSA -keysize 4096 -sigalg SHA512withRSA \
-        -dname "CN=ApplicationCloudConfig,OU=OPTSD,O=OPTSD" \
-        -keypass optsd1705 -keystore config-server.jks \
-        -storepass optsd1705
+        -keyalg RSA \ 
+        -dname "CN=Application Cloud Config,OU=Unit,O=OPTSD,L=HCM,S=HCM,C=VN" \
+        -keypass optsd1705_secret -keystore config-server.jks -storepass optsd1705_pass
+
 ```

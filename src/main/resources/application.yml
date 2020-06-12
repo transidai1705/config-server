@@ -10,8 +10,8 @@ spring:
                 git:
                     uri: https://github.com/transidai1705/application-config.git
                     default-label: master		        # default branch to get config if the client doesn't specify
-                    username: optsd				        # username & password for connecting to GIT repo
-                    password: 228661146      
+                    #username: 				            # username & password for connecting to GIT repo
+                    #password:      
                     clone-on-start: true		        # clone GIT repo config to local filesystem 
                     searchPaths: config, config/app		# search path to the configuration file on GIT repo
     security:
