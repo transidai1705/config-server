@@ -11,6 +11,6 @@ encrypt:
 #   key: secret_string      # use for SYMMETRIC CRYPTOGRAPHY 
     keyStore:               # use for ASYMMETRIC CRYPTOGRAPHY
         location: classpath:/config-server.jks      # Contains a Resource location
-        password: sdste@m2020                       # Holds the password that unlocks the keystore
+        password: optsd1705                         # Holds the password that unlocks the keystore
         alias: config-server-key                    # Identifies which key in the store to use
-        secret: sdste@m2019                         # The type of KeyStore to create. Defaults to jks.
+        secret: optsd1705                           # The type of KeyStore to create. Defaults to jks.
